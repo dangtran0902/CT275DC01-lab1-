@@ -1,71 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, shrink-to-fit=no"
-		/>
-		<title>Grid Template for Bootstrap</title>
-	</head>
 
-	<body>
-		<h1><img src="img/logo.jpg" /></h1>
-		<div>
-			<a href="#">Trang chủ</a>
-			<a href="#">Dịch vụ</a>
-			<a href="#">Về chúng tôi</a>
-			<a href="#">FAQ</a>
-			<a href="#">Liên hệ</a>
-		</div>
-		<hr />
-		<h2 style="margin: 0"><b>Các dịch vụ</b></h2>
-		<hr />
-		<div>
-			<p>Thành phố</p>
-			<div>
-				<p>19.999.999 VNĐ</p>
-				<p>Bao gồm mọi chi phí</p>
-				<p>1 Hướng dẫn viên</p>
-				<p>Phòng VIP</p>
-				<p>Giảm giá 50%</p>
-				<a href="#">Đăng ký ngay</a>
-			</div>
-		</div>
-		<div>
-			<p>Bãi biển</p>
-			<div>
-				<p>19.999.999 VNĐ</p>
-				<p>Bao gồm mọi chi phí</p>
-				<p>1 Hướng dẫn viên</p>
-				<p>Phòng VIP</p>
-				<p>Thức ăn miễn phí</p>
-				<a href="#">Đăng ký ngay</a>
-			</div>
-		</div>
-		<div>
-			<p>Tiết kiệm</p>
-			<div>
-				<p>9.999.999 VNĐ</p>
-				<p>Bao gồm mọi chi phí</p>
-				<p>1 Hướng dẫn viên</p>
-				<p>Phòng bình dân</p>
-				<p>Giảm giá thức ăn 10%</p>
-				<a href="#">Đăng ký ngay</a>
-			</div>
-		</div>
-		<hr />
-		<footer>
-			<div>
-				<p>© Bản quyền thuộc về Công ty Du lịch Bụi.</p>
-				<ul>
-					<li><a href="#">Trang chủ</a></li>
-					<li><a href="#">Dịch vụ</a></li>
-					<li><a href="#">Về chúng tôi</a></li>
-					<li><a href="#">FAQ</a></li>
-					<li><a href="#">Liên hệ</a></li>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>Grid Template for Bootstrap</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+	integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top" style="background-color: #1a5276;">
+		<div class="container">
+			<a class="navbar-brand"><img src="img/logo.jpg" height="100px" /></a>
+			<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navMenu">
+				<ul class="navbar-nav gap-2 mt-3 mt-lg-0">
+					<li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+					<li class="nav-item"><a class="nav-link active" href="service.html">Dịch vụ</a></li>
+					<li class="nav-item"><a class="nav-link" href="about.html">Về chúng tôi</a></li>
+					<li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact.html">Liên hệ</a></li>
 				</ul>
 			</div>
-		</footer>
-	</body>
+		</div>
+	</nav>
+	<hr />
+	<div class="text-center fw-bold mb-2">
+		<h2 style="margin: 0"><b>Các dịch vụ</b></h2>
+	</div>
+
+	<hr />
+	<div class="row p-lg-5">
+		<div class="col-md-4 mb-3">
+			<div class="card text-center">
+				<div class="card-header bg-white">
+					<span class="badge rounded-pill border border-success text-dark fw-normal px-3 py-2 w-100">Thành
+						phố</span>
+				</div>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item bg-light fw-bold">19.999.999 VNĐ</li>
+					<li class="list-group-item text-primary">Bao gồm mọi chi phí</li>
+					<li class="list-group-item text-primary">1 Hướng dẫn viên</li>
+					<li class="list-group-item text-primary">Phòng VIP</li>
+					<li class="list-group-item text-primary">Giảm giá 50%</li>
+				</ul>
+				<div class="card-footer bg-light">
+					<a href="#" class="btn btn-sm" style="background-color:#1a5276;color:#fff;">Đăng ký ngay</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 mb-3">
+			<div class="card text-center">
+				<div class="card-header bg-white">
+					<span class="badge rounded-pill border border-success text-dark fw-normal px-3 py-2 w-100">Bãi
+						biển</span>
+				</div>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item bg-light fw-bold">19.999.999 VNĐ</li>
+					<li class="list-group-item text-primary">Bao gồm mọi chi phí</li>
+					<li class="list-group-item text-primary">1 Hướng dẫn viên</li>
+					<li class="list-group-item text-primary">Phòng VIP</li>
+					<li class="list-group-item text-primary">Thức ăn miễn phí</li>
+				</ul>
+				<div class="card-footer bg-light border-0 pb-3">
+					<a href="#" class="btn btn-sm" style="background-color:#1a5276; color:#fff;">Đăng ký ngay</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 mb-3">
+			<div class="card text-center">
+				<div class="card-header bg-white">
+					<span class="badge rounded-pill border border-success text-dark fw-normal px-3 py-2 w-100">Tiết
+						kiệm</span>
+				</div>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item bg-light fw-bold">9.999.999 VNĐ</li>
+					<li class="list-group-item text-primary">Bao gồm mọi chi phí</li>
+					<li class="list-group-item text-primary">1 Hướng dẫn viên</li>
+					<li class="list-group-item text-primary">Phòng bình dân</li>
+					<li class="list-group-item text-primary">Giảm giá thức ăn 10%</li>
+				</ul>
+				<div class="card-footer bg-light border-0 pb-3">
+					<a href="#" class="btn btn-sm" style="background-color:#1a5276; color:#fff;">Đăng ký ngay</a>
+				</div>
+			</div>
+		</div>
+	</div>
+		<hr />
+		<footer>
+		<div class="bg-dark text-white py-4 mt-5">
+			<div class="container d-flex flex-wrap justify-content-between align-items-center">
+				<p class="mb-0 text-secondary">© Bản quyền thuộc về Công ty Du lịch Bụi.</p>
+				<ul class="nav">
+					<li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+					<li class="nav-item"><a class="nav-link" href="service.html">Dịch vụ</a></li>
+					<li class="nav-item"><a class="nav-link" href="about.html">Về chúng tôi</a></li>
+					<li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact.html">Liên hệ</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</body>
+
 </html>
